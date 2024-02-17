@@ -1,9 +1,11 @@
 import React from "react";
+import LocationDetails from "./LocationDetails";
 
-function App() {
+function App({ location }) {
+  const { city, country } = location;
   return (
     <div className="App">
-      <h1>Weather App</h1>
+      <LocationDetails city={city} country={country} />
     </div>
   );
 }
