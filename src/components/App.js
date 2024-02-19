@@ -1,11 +1,12 @@
 import React from "react";
 import LocationDetails from "./LocationDetails";
+import ForecastSummaries from "./ForecastSummaries";
 
-function App({ location }) {
-  const { city, country } = location;
+function App({ forecasts, location }) {
   return (
     <div className="App">
-      <LocationDetails city={city} country={country} />
+      <LocationDetails city={location.city} country={location.country} />
+      <ForecastSummaries forecasts={forecasts} />
     </div>
   );
 }
