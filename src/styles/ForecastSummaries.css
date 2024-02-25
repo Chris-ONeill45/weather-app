@@ -1,4 +1,11 @@
 .forecast-summaries {
   display: flex;
   justify-content: space-between;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.forecast-summaries button {
+  margin: 5%;
 }
